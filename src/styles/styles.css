@@ -1,0 +1,94 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+.bar-group .name-label {
+  text-anchor: end;
+  font-weight: 300;
+  font-size: 1em;
+  fill: #333;
+}
+
+.bar-group .value-label {
+  text-anchor: end;
+  fill: #fff;
+  font-weight: 900;
+  font-size: 0.7em;
+}
+
+.container .bar-group {
+  transition: opacity 0.3s;
+}
+
+/* Fade bars when the chart is hovered */
+.container:hover .bar-group {
+  opacity: 0.3;
+}
+
+/* But don't fade the hovered bar... */
+.container .bar-group:hover {
+  opacity: 1;
+}
+
+.container .bar-group:hover .name-label {
+  font-weight: 400;
+}
+
+.container .bar-group:hover .value-label {
+  font-size: 0.8em;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.cell {
+  background: #feffc4;
+  border: 1px dotted #aaa;
+  padding: 10px;
+  width: 55px;
+  height: 20px;
+  position: absolute;
+  font-size: 11px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 10px;
+}
+.buttonSection{
+  margin-left: 43%;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
